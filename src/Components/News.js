@@ -85,7 +85,7 @@ export class News extends Component {
     return (
       <>
         <div className="container my-3">
-          <h1 className="text-center">Top {this.capitalizeFirstLetter(this.props.category) == "General" ? "" : this.capitalizeFirstLetter(this.props.category)} Headlines</h1>
+          <h1 className="text-center" style={{ margin: '20px 0px', marginTop: '70px'}}>Top {this.capitalizeFirstLetter(this.props.category) == "General" ? "" : this.capitalizeFirstLetter(this.props.category)} Headlines</h1>
           {this.state.loading && <Spinner/>}
           <hr style={{height: "3px",color:"#333",backgroundColor: "#333"}}/>
           <div className="row">
